@@ -1,4 +1,4 @@
-Waggle-Dance
+Waggle Dance
 ============
 This project is about the waggle dance of the honeybee that shows his colony where food source is and how abundant and quality it is.
 
