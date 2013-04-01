@@ -13,7 +13,7 @@ void keyPressed(){
         
         // cos C = (a*a + b*b -c*c) / 2*a*b
         
-        float a = 400;
+        float a = height/2-50;
         float b = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-height/2)*(flowerY-height/2) );
         float c = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-50)*(flowerY-50) );
         

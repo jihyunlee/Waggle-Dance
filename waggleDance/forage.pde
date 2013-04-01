@@ -109,7 +109,7 @@ void drawFlower() {
     flowerX = width/4;
     flowerY = 3*height/8;
 
-    distance = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-450)*(flowerY-450) );
+    distance = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-height/2)*(flowerY-height/2) );
     duration = int(map(distance, 0, 540, 0, 360));
     arcIndex = duration;
   }
@@ -130,7 +130,7 @@ void drawFlower() {
 
 void drawBee() {
   PVector last = honeybee.history.get(honeybee.history.size()-1);
-  PVector pOrigin = new PVector(width/2, 450);
+  PVector pOrigin = new PVector(width/2, height/2);
   PVector pDestination = new PVector(flowerX, flowerY);
 
   if ( (abs(flowerX-last.x) < 1) && (abs(flowerY-last.y) < 1) ) {
@@ -143,7 +143,7 @@ void drawBee() {
   if (backHome) {
     if ( (abs(width/2-last.x) < 5) && (abs(height/2-last.y) < 5)) {
       mode = 4;
-      float a = 400;
+      float a = height/2-50;
       float b = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-height/2)*(flowerY-height/2) );
       float c = sqrt( (flowerX-width/2)*(flowerX-width/2) + (flowerY-50)*(flowerY-50) );
       foodTheta = acos((a*a + b*b -c*c) / (2*a*b));       

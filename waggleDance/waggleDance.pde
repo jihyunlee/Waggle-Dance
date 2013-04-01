@@ -25,7 +25,7 @@ HScrollbar windScroll;
 
 void setup() {
   if (bHD) size(1920, 1080);
-  else    size(1280, 720);
+  else    size(1024, 576);
 
   smooth();
   frameRate(30);
@@ -81,7 +81,7 @@ void drawIntro() {
   } 
   else {
     textFont(font, 30);
-    text("Please hit the SPACE BAR to start!", width/2, 600);
+    text("Please hit the SPACE BAR to start!", width/2, 480);
   }
 
   fill(#999999);
@@ -91,7 +91,7 @@ void drawIntro() {
   } 
   else {
     textFont(font, 18);
-    text("The Nature of Code  |   Jihyun Lee", width/2, 680);
+    text("The Nature of Code  |   Jihyun Lee", width/2, 540);
   }
 
   strokeWeight(5);
